@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BleDownload.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Entry
+                x:Name="BleCommand"
+                Text=""
+                BackgroundColor="#262626"
+                TextColor="#FFFFFF"
+                />
+            <Button
+                x:Name="Execute"
+                Text="Scan And Execute Command"
+                SemanticProperties.Hint="Scans for devices and executes the above command"
+                Clicked="ScanBtn_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="400"
+                BackgroundColor="#3985F7"
+                TextColor="#FFFFFF"
+                FontSize="16"/>
+                
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
